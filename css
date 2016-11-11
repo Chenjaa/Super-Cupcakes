@@ -1,0 +1,9 @@
+#splash {
+	position: relative;
+}
+
+#logo {
+	position: absolute;
+	bottom: 40px;
+	left: 500px;
+}
