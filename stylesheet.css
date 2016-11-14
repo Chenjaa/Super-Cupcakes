@@ -1,0 +1,14 @@
+#splash {
+    position: relative;
+}
+
+#splash_img {
+}
+
+#logo {
+    width: 25%;
+	position: absolute;
+    left: 37%;
+    bottom: -13%;
+	
+}
