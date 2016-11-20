@@ -3,17 +3,14 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+      <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
       
     <style>
       #splash {
     position: relative;
 }
 
-    #splash_bg {
-        
-        margin-bottom: -4px;
-        
-}
+
 
     #logo {
     width: 25%;
@@ -22,19 +19,57 @@
     bottom: -30%;
 	
 }
+        
     </style>
   </head>
   
   <body>
+      
+    <ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="cupcakes.html">Cupcakes</a></li>
+  <li><a href="https://supercupcakesblogblog.wordpress.com/" target = "_blank">Blog</a></li>
+  <li><a href="faq.html">FAQ</a></li>
+  <li><a href="about.html">About Us</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+</ul>  
+      
+
+      
     <div id = "splash">
-      <div id = "splash_bg"> <img src = "splash.png" width = "100%"> </div>
+        
+ 
+
+  <img class="mySlides w3-animate-fading" src="splash1.png" width = "100%">
+  <img class="mySlides w3-animate-fading" src="splash2.png" width = "100%">
+  <img class="mySlides w3-animate-fading" src="splash3.png" width = "100%">
+  <img class="mySlides w3-animate-fading" src="splash4.png" width = "100%">
+                  
+
+        
+      <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 4000);
+}
+</script>
         
 	  <div id = "logo"> <img src = "logo_overlay.png" width = "100%"> </div>
     </div>
     
     <a href = "cupcakes.html"> <img src = "cupcakes.png" width = "100%"> </a>
       
-    <a href = "https://supercupcakesblogblog.wordpress.com/"> <img src = "blog.png" width = "50%"> </a>
+    <a href = "https://supercupcakesblogblog.wordpress.com/" target = "_blank"> <img src = "blog.png" width = "50%"> </a>
       
     <a href = "faq.html"> <img src = "faq.png" width = "50%" align = "right"> </a>
       
