@@ -1,19 +1,12 @@
 body {
   background-color: #DEF4F5;
-    font-family: coves;
+    font-family: "coves";
+    color: #434D57
 }
 
 @font-face {
-    font-family: coves;
-    src: url(Coves Light.otf);
-    
-}
-
-@font-face {
-    font-family: coves; 
-    src: url(Coves Bold.otf);
-        font-weight: bold;
-    
+    font-family: "coves";
+    src: url("Coves Light.otf") format("opentype");
 }
 
 h1 {
@@ -21,7 +14,7 @@ h1 {
 }
 
 p {
-    font-size: 14pt;
+    font-size: 16pt;
 }
 
 ul {
